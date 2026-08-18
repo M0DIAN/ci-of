@@ -6,6 +6,12 @@ All notable changes to the CI Optimization Framework are recorded here.
 
 Initial standalone release of the CI Optimization Framework.
 
+**Repository identity.** The dedicated public repository for this
+framework is [M0DIAN/ci-of](https://github.com/M0DIAN/ci-of). Its
+standalone history was imported byte-for-byte from the sealed
+MarketVault extraction; the source extraction anchor remains
+`ci-framework-v0.1.0` / `bb94197d74b6a49f5513097d6bca28ad888ef9b6`.
+
 **Provenance.** This version was extracted and generalized from the
 production CI governance and optimization system developed for
 MarketVault. Source extraction baseline:
