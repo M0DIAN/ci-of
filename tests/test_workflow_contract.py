@@ -225,7 +225,7 @@ def test_no_unqualified_pypi_install_in_workflows() -> None:
 
 def test_template_pins_framework_from_git_source() -> None:
     template = read_text(WORKFLOWS["template"])
-    assert "git+https://github.com/<OWNER>/<FRAMEWORK_REPO>.git@<TAG>" in template
+    assert "git+https://github.com/M0DIAN/ci-of.git@v0.1.0" in template
 
 
 # ---------------------------------------------------------------------------

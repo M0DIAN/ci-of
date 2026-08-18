@@ -22,6 +22,11 @@ classifiers = [
     "Topic :: Software Development :: Build Tools",
 ]
 
+[project.urls]
+Homepage = "https://github.com/M0DIAN/ci-of"
+Repository = "https://github.com/M0DIAN/ci-of"
+Issues = "https://github.com/M0DIAN/ci-of/issues"
+
 [project.scripts]
 ci-opt = "ci_optimizer.cli:main"
 

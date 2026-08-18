@@ -12,6 +12,8 @@ strict configuration file (`ciopt.toml`).
 > `99840349bdab4f0dc56a420bc66a1556750d1878`. The extraction carries
 > forward only the production-proven, fail-closed V1 contracts.
 
+**Repository:** <https://github.com/M0DIAN/ci-of>
+
 ## Problem
 
 CI often reruns expensive validation even when the risk profile does not
@@ -105,11 +107,11 @@ python -m pip install -e ".[dev]"
 ```
 
 Downstream repositories pin the framework source with a git install.
-Replace `<OWNER>/<FRAMEWORK_REPO>` and `<TAG>` with the final values:
+The v0.1.0 release of the framework lives in this repository:
 
 ```console
 python -m pip install \
-  "git+https://github.com/<OWNER>/<FRAMEWORK_REPO>.git@<TAG>"
+  "git+https://github.com/M0DIAN/ci-of.git@v0.1.0"
 ```
 
 `ci-opt` is the CLI; `python -m ci_optimizer` works too. Copy
