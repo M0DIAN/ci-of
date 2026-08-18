@@ -210,26 +210,26 @@ CI Optimization Framework 的目标不是“尽可能少跑 CI”，而是：
 
 ## 框架策略
 
-变更
-  ↓
-风险分类器
-  ├─ docs_fast
-  ├─ package_docs
-  ├─ control_plane
-  └─ full
+    变更
+      ↓
+    风险分类器
+      ├─ docs_fast
+      ├─ package_docs
+      ├─ control_plane
+      └─ full
 
-对于 FULL PR：
+    对于 FULL PR：
 
-执行 FULL
-  ↓
-生成 Attestation
+    执行 FULL
+      ↓
+    生成 Attestation
 
-Squash Merge 之后：
+    Squash Merge 之后：
 
-证明当前 Tree 与已测试 Tree 完全相同
-  ↓
-是 → 复用 PR FULL 证据
-否 → 再次执行 FULL
+    证明当前 Tree 与已测试 Tree 完全相同
+      ↓
+    是 → 复用 PR FULL 证据
+    否 → 再次执行 FULL
 
 分类器会把一个变更范围映射到四个稳定风险等级之一：
 
@@ -286,8 +286,8 @@ Squash Merge 之后：
 
 都会落入：
 
-`full`
-`reuse=false`
+    full
+    reuse=false
 
 随后 workflow 会执行正常的 FULL 验证。
 
@@ -305,7 +305,7 @@ Post-merge FULL reuse（V1）只有在**所有证明条件同时成立**时才�
 
 任何一个条件不成立：
 
-`POST_MERGE_REUSE=false`
+    POST_MERGE_REUSE=false
 
 随后执行新的 FULL 验证。
 
@@ -416,7 +416,7 @@ CLI 命令为：
 
 `control_plane` 默认保持关闭：
 
-`control_plane_eligible = []`
+    control_plane_eligible = []
 
 只有在下游项目已经：
 
